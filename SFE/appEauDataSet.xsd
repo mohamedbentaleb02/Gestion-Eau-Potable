@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="appEauDataSet" targetNamespace="http://tempuri.org/appEauDataSet.xsd" xmlns:mstns="http://tempuri.org/appEauDataSet.xsd" xmlns="http://tempuri.org/appEauDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="appEauConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="appEauConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SFE.Properties.Settings.GlobalReference.Default.appEauConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="consommationTableAdapter" GeneratorDataComponentClassName="consommationTableAdapter" Name="consommation" UserDataComponentName="consommationTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="appEauConnectionString (Settings)" DbObjectName="appEau.dbo.consommation" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT operation_date, qntt_consommee, periode_consommation FROM dbo.consommation</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="operation_date" DataSetColumn="operation_date" />
+              <Mapping SourceColumn="qntt_consommee" DataSetColumn="qntt_consommee" />
+              <Mapping SourceColumn="periode_consommation" DataSetColumn="periode_consommation" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="appEauDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="appEauDataSet" msprop:Generator_DataSetName="appEauDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="consommation" msprop:Generator_RowEvHandlerName="consommationRowChangeEventHandler" msprop:Generator_RowDeletedName="consommationRowDeleted" msprop:Generator_RowDeletingName="consommationRowDeleting" msprop:Generator_RowEvArgName="consommationRowChangeEvent" msprop:Generator_TablePropName="consommation" msprop:Generator_RowChangedName="consommationRowChanged" msprop:Generator_RowChangingName="consommationRowChanging" msprop:Generator_TableClassName="consommationDataTable" msprop:Generator_RowClassName="consommationRow" msprop:Generator_TableVarName="tableconsommation" msprop:Generator_UserTableName="consommation">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="operation_date" msprop:Generator_ColumnPropNameInRow="operation_date" msprop:Generator_ColumnPropNameInTable="operation_dateColumn" msprop:Generator_ColumnVarNameInTable="columnoperation_date" msprop:Generator_UserColumnName="operation_date" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="qntt_consommee" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="qntt_consommee" msprop:Generator_ColumnPropNameInTable="qntt_consommeeColumn" msprop:Generator_ColumnVarNameInTable="columnqntt_consommee" msprop:Generator_UserColumnName="qntt_consommee" type="xs:double" minOccurs="0" />
+              <xs:element name="periode_consommation" msprop:Generator_ColumnPropNameInRow="periode_consommation" msprop:Generator_ColumnPropNameInTable="periode_consommationColumn" msprop:Generator_ColumnVarNameInTable="columnperiode_consommation" msprop:Generator_UserColumnName="periode_consommation" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

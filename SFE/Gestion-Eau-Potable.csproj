@@ -1,0 +1,358 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{26F266D2-F566-4775-B794-58EA0CC9CD35}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SFE</RootNamespace>
+    <AssemblyName>SFE</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\pc\Desktop\Projects\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>4F458924D7AA487039F35BDA4A4940F081CF0B5A</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>SFE_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=5.15.4.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.5.15.4\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.WinForms, Version=0.9.7.1, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.WinForms.0.9.7.1\lib\net45\LiveCharts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="LiveCharts.Wpf, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiveCharts.Wpf.0.9.7\lib\net45\LiveCharts.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.6.0.0\lib\net461\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.AccessControl, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.AccessControl.6.0.0\lib\net461\System.Security.AccessControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Permissions, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Permissions.6.0.0\lib\net461\System.Security.Permissions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal.Windows, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Principal.Windows.5.0.0\lib\net461\System.Security.Principal.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="appEauDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>appEauDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="addClientForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addClientForm.Designer.cs">
+      <DependentUpon>addClientForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="clientInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clientInfoForm.Designer.cs">
+      <DependentUpon>clientInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="consommationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consommationForm.Designer.cs">
+      <DependentUpon>consommationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="consommationInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="consommationInfo.Designer.cs">
+      <DependentUpon>consommationInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsommationList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsommationList.Designer.cs">
+      <DependentUpon>ConsommationList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsRegSitBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsRegSitBar.Designer.cs">
+      <DependentUpon>ConsRegSitBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clients.Designer.cs">
+      <DependentUpon>Clients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess.cs" />
+    <Compile Include="functions.cs" />
+    <Compile Include="Helper.cs" />
+    <Compile Include="Nbrpolice.cs" />
+    <Compile Include="PeriodeConsommation.cs" />
+    <Compile Include="PrintConsommation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintConsommation.Designer.cs">
+      <DependentUpon>PrintConsommation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PrintReglement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrintReglement.Designer.cs">
+      <DependentUpon>PrintReglement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reglementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reglementForm.Designer.cs">
+      <DependentUpon>reglementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignIn.Designer.cs">
+      <DependentUpon>SignIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="navBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="navBar.Designer.cs">
+      <DependentUpon>navBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReglementList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReglementList.Designer.cs">
+      <DependentUpon>ReglementList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reglemetnInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reglemetnInfo.Designer.cs">
+      <DependentUpon>reglemetnInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="situationGlobale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="situationGlobale.Designer.cs">
+      <DependentUpon>situationGlobale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="situationInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="situationInfo.Designer.cs">
+      <DependentUpon>situationInfo.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addClientForm.resx">
+      <DependentUpon>addClientForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="clientInfoForm.resx">
+      <DependentUpon>clientInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consommationForm.resx">
+      <DependentUpon>consommationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="consommationInfo.resx">
+      <DependentUpon>consommationInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsommationList.resx">
+      <DependentUpon>ConsommationList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsRegSitBar.resx">
+      <DependentUpon>ConsRegSitBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Clients.resx">
+      <DependentUpon>Clients.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintConsommation.resx">
+      <DependentUpon>PrintConsommation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrintReglement.resx">
+      <DependentUpon>PrintReglement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reglementForm.resx">
+      <DependentUpon>reglementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignIn.resx">
+      <DependentUpon>SignIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="navBar.resx">
+      <DependentUpon>navBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReglementList.resx">
+      <DependentUpon>ReglementList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reglemetnInfo.resx">
+      <DependentUpon>reglemetnInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="situationGlobale.resx">
+      <DependentUpon>situationGlobale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="situationInfo.resx">
+      <DependentUpon>situationInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="appEauDataSet.xsc">
+      <DependentUpon>appEauDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="appEauDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>appEauDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="appEauDataSet.xss">
+      <DependentUpon>appEauDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printing-text1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\en tete assosiation tlilit  f - Copy2_auto_x2-denoised_sharpened_upscaled_x2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\en-tete-assosiation-tlilit-f-Copy2_auto_x2-denoised_sharpened_upscaled_x2-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\analytics.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\status.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
